@@ -38,6 +38,10 @@ namespace IN451_Unit2_Ted_Picou
 
         }
 
+
+        /*Button click passes the login information to the business logic handler, which then verifies the login credentials.
+         * if credentials are verified, the connection string is set, the login window is closed, and the TableViewer form is opened.*/
+
         private void LoginButton_MouseClick(object sender, MouseEventArgs e)
         {
 
