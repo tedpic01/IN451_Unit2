@@ -29,10 +29,10 @@
         private void InitializeComponent()
         {
             this.ResultsBox = new System.Windows.Forms.TextBox();
-            this.DatabaseLocation = new System.Windows.Forms.TextBox();
-            this.LabelDatabaseLocation = new System.Windows.Forms.Label();
             this.StartButton = new System.Windows.Forms.Button();
             this.StartButton2 = new System.Windows.Forms.Button();
+            this.LabelDatabaseLocation = new System.Windows.Forms.Label();
+            this.DatabaseLocation = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // ResultsBox
@@ -46,25 +46,6 @@
             this.ResultsBox.Size = new System.Drawing.Size(439, 215);
             this.ResultsBox.TabIndex = 0;
             this.ResultsBox.TextChanged += new System.EventHandler(this.ResultsBox_TextChanged);
-            // 
-            // DatabaseLocation
-            // 
-            this.DatabaseLocation.Location = new System.Drawing.Point(19, 282);
-            this.DatabaseLocation.Name = "DatabaseLocation";
-            this.DatabaseLocation.Size = new System.Drawing.Size(439, 20);
-            this.DatabaseLocation.TabIndex = 1;
-            this.DatabaseLocation.TextChanged += new System.EventHandler(this.DatabaseLocation_TextChanged);
-            // 
-            // LabelDatabaseLocation
-            // 
-            this.LabelDatabaseLocation.AutoSize = true;
-            this.LabelDatabaseLocation.Cursor = System.Windows.Forms.Cursors.Default;
-            this.LabelDatabaseLocation.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.LabelDatabaseLocation.Location = new System.Drawing.Point(16, 255);
-            this.LabelDatabaseLocation.Name = "LabelDatabaseLocation";
-            this.LabelDatabaseLocation.Size = new System.Drawing.Size(91, 13);
-            this.LabelDatabaseLocation.TabIndex = 2;
-            this.LabelDatabaseLocation.Text = "Connection String";
             // 
             // StartButton
             // 
@@ -86,6 +67,25 @@
             this.StartButton2.UseVisualStyleBackColor = true;
             this.StartButton2.MouseClick += new System.Windows.Forms.MouseEventHandler(this.StartButton2_MouseClick);
             // 
+            // LabelDatabaseLocation
+            // 
+            this.LabelDatabaseLocation.AutoSize = true;
+            this.LabelDatabaseLocation.Cursor = System.Windows.Forms.Cursors.Default;
+            this.LabelDatabaseLocation.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.LabelDatabaseLocation.Location = new System.Drawing.Point(16, 255);
+            this.LabelDatabaseLocation.Name = "LabelDatabaseLocation";
+            this.LabelDatabaseLocation.Size = new System.Drawing.Size(91, 13);
+            this.LabelDatabaseLocation.TabIndex = 2;
+            this.LabelDatabaseLocation.Text = "Connection String";
+            // 
+            // DatabaseLocation
+            // 
+            this.DatabaseLocation.Location = new System.Drawing.Point(19, 282);
+            this.DatabaseLocation.Name = "DatabaseLocation";
+            this.DatabaseLocation.Size = new System.Drawing.Size(439, 20);
+            this.DatabaseLocation.TabIndex = 1;
+            this.DatabaseLocation.TextChanged += new System.EventHandler(this.DatabaseLocation_TextChanged);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -97,7 +97,7 @@
             this.Controls.Add(this.DatabaseLocation);
             this.Controls.Add(this.ResultsBox);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "SQL Server Data Retriever";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -106,10 +106,10 @@
         #endregion
 
         private System.Windows.Forms.TextBox ResultsBox;
-        private System.Windows.Forms.Label LabelDatabaseLocation;
         private System.Windows.Forms.Button StartButton;
-        public System.Windows.Forms.TextBox DatabaseLocation;
         private System.Windows.Forms.Button StartButton2;
+        private System.Windows.Forms.Label LabelDatabaseLocation;
+        public System.Windows.Forms.TextBox DatabaseLocation;
     }
 }
 

@@ -18,7 +18,8 @@ namespace IN451_Unit2_Ted_Picou
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            //Application.Run(new Form1());
+            Application.Run(new LoginWindow());
 
 
         }

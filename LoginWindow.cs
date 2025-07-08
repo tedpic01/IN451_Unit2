@@ -54,7 +54,7 @@ namespace IN451_Unit2_Ted_Picou
                 bool isValidLogin = businessLogicHandler.VerifyLogin();
                 if (!isValidLogin)
                 {
-                    throw new Exception("Invalid login credentials. Please try again");
+                    throw new Exception("Invalid login credentials. Please try again.");
                 }
 
                 if (isValidLogin)

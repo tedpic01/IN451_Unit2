@@ -23,10 +23,10 @@ namespace IN451_Unit2_Ted_Picou
             DatabaseLocation.Text = connectionString;
         }
 
-        //This allows the user to chnage the database connection string from the text box.
+        //This allows the user to change the database connection string from the text box.
         private void DatabaseLocation_TextChanged(object sender, EventArgs e)
         {
-            DatabaseHandler.DatabaseLocation = DatabaseLocation.Text;
+            //DatabaseHandler.DatabaseLocation = DatabaseLocation.Text;
         }
 
         /*This button activates the logic for the contact names and count by using the C# methods.
