@@ -100,6 +100,7 @@
             this.Controls.Add(this.EmployeeButton);
             this.Controls.Add(this.CustomersButton);
             this.Controls.Add(this.ResultsBox);
+            this.MinimumSize = new System.Drawing.Size(372, 489);
             this.Name = "TableViewer";
             this.Text = "TableViewer";
             this.ResumeLayout(false);
